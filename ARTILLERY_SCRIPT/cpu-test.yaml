@@ -1,0 +1,15 @@
+config:
+    target: 'http://ec2-13-209-5-22.ap-northeast-2.compute.amazonaws.com'
+    phases:
+        - duration: 10
+          arrivalRate: 10
+          name: repl
+    environments:
+        local:
+          target: "http://localhost:3000/"
+          phases:
+            - duration: 120
+              arrivalRate: 20
+scenarios:
+    - flow:
+        - log: "Current environment is set to: {{$environments}}"

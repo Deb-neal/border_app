@@ -1,0 +1,14 @@
+server: 
+  port: 3306
+
+
+db:
+  type: 'mysql'
+  host: 'localhost'
+  username: 'root'
+  password: '1Q2W3E4R!'
+  database: 'board_app'
+
+jwt: 
+  expriesIn: 3600;
+  
